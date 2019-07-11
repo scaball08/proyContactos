@@ -1,0 +1,178 @@
+
+h1, h2 {
+  text-align: center;
+}
+
+.tencab{
+    background-color:  orange!important;    
+}
+
+body{
+ background-color: orange;	
+} 
+
+
+
+div.contenedor{
+	width: 60%;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.btn {
+    display: block;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    color: #000000;
+}
+.btn:hover{
+ background-color: #d87f16;	
+}
+
+.cantidad:nth-child(3) {
+text-align: center;
+}
+
+.cantidad,#crear_contacto {
+background-color:#f3f3f3
+}
+div#crear_contacto {
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+}
+.container{
+	border-radius: 8px;
+}
+.table td, .table th {
+ padding: 5px 0;	
+}
+
+td.borrar{
+	margin-left: 0px;
+}
+
+td.editar a{
+	background-color:rgb(84, 149, 173);
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 1px;  
+
+}
+
+td.borrar a{
+	background-color:rgb(162, 21, 21);
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 1px; 
+	
+}
+
+td.editar a, td.borrar a{
+color: #ffffff;	
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.volver {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+div#mensaje{
+background-color: #52bad5;
+margin-top: 10px;
+height:50px;
+line-height: 50px;
+text-align: center;
+text-transform: uppercase;
+display: block;
+color: #ffffff;
+font-family: arial,helvetica,san-serif;
+border-radius: 10px; 
+opacity: 0;
+}
+
+div#borrado{
+background-color: rgba(217, 0, 7, 0.66);
+margin-top: 10px;
+height:50px;
+line-height: 50px;
+text-align: center;
+text-transform: uppercase;
+display: block;
+color: #ffffff;
+font-family: arial,helvetica,san-serif;
+border-radius: 10px; 
+opacity: 0;
+}
+
+
+@keyframes mostrar{
+ 0%{opacity: 0;}
+ 100%{opacity: 1;}
+}
+
+@keyframes ocultar{
+ 0%{opacity: 1;}
+ 100%{opacity: 0;}
+}
+
+.mostrar{
+animation: mostrar .5s ease-in 1 forwards;
+}
+.ocultar{
+animation: ocultar .5s ease-in 1 forwards;
+}
+
+/* estilos de  boton borrar*/
+button.borrar {
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/borrar.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-indent: -9999px;
+    display:block;
+    height:40px;
+    width:40px;
+    cursor: pointer;
+    margin:0 auto;
+    padding:10px;
+}
+.activo{
+	background-color: rgba(217, 0, 7, 0.66)!important;
+}
+
+tbody tr input[type='text']{
+width: 90%;	
+}
+
+/* == MODO EDICION ===*/
+.modo-edicion p,
+.modo-edicion .editarBtn,
+tbody tr input[type='text'],
+div.existentes table  tr a.guardarBtn{
+display:none;
+}
+
+.modo-edicion input[type='text'],
+div.existentes table  tr.modo-edicion a.guardarBtn {
+	display: block;
+}
+
+/* deshabilitar registros */
+.desactivado{
+  pointer-events: none;	
+  cursor: default;
+  opacity: .5;
+}
